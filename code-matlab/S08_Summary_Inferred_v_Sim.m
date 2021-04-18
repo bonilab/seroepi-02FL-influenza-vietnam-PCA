@@ -9,10 +9,10 @@ clear all;
 
 
 
-% THESE HAVE 30 REPLICATES
+% THESE HAVE 50 REPLICATES
 %
-A = csvread( './AgePC1_Simulated/FINAL_Inferred.summary.500K.beta135.rep30.csv',0,0);
-%A = csvread( './AgePC1_Simulated/FINAL_Inferred.summary.500K.beta135.boost7p26.rep30.csv',0,0);
+A = csvread( './AgePC1_Simulated/FINAL_Inferred.summary.500K.beta135.rep50.csv',0,0);
+%A = csvread( './AgePC1_Simulated/FINAL_Inferred.summary.500K.beta135.boost7p26.rep50.take2.csv',0,0);
 %
 
 
@@ -57,6 +57,7 @@ betas = [-0.5 -0.3 -0.1];
 %betas = [-0.3 -0.1];
 
 nb = size(betas,2);
+sd_circle_size = 50;
 
 for i=1:nb
     
@@ -69,7 +70,7 @@ for i=1:nb
     
     plot( [0.0 0.50], [0.0 0.50], 'k-' ); hold on;
     %h=plot( A(:,1)/100, A(:,10), 'ko', 'MarkerFaceColor', my_greenblue_1, 'MarkerEdgeColor', my_greenblue_1, 'MarkerSize', 9 );
-    h=scatter( B(:,1)/100 + x, B(:,10), 'MarkerFaceColor', mycolors{i}, 'MarkerEdgeColor', mycolors{i}, 'SizeData', 110, 'MarkerFaceAlpha', 0.5 );
+    h=scatter( B(:,1)/100 + x, B(:,10), 'MarkerFaceColor', mycolors{i}, 'MarkerEdgeColor', mycolors{i}, 'SizeData', sd_circle_size, 'MarkerFaceAlpha', 0.5 );
     %h=scatter( B(:,1)/100 + x, B(:,10), 'MarkerFaceColor', mycolors{i}, 'MarkerEdgeColor', mycolors{i}, 'SizeData', 40, 'MarkerFaceAlpha', 0.5 );
     %alpha(h,0.5);
 
