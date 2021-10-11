@@ -5,7 +5,7 @@ numfiles=1;
 
 for i=1:numfiles
 
-        strInfile = ['./B_Simulated/BMatrix.' strBase '.csv'];
+        strInfile = ['./B_Simulated/20210225_500K_beta135_boost7p26_rep50_take2/BMatrix.' strBase '.csv'];
         %strOutfile = ['./AgePC1_Simulated/AgePC1.' strBase '.csv'];
 
         B = csvread( strInfile ,1,0);

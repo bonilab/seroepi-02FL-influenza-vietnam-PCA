@@ -71,7 +71,7 @@ end
 
 % %
 % %
-% %    THIS CODE BLOCK MAKES FIGURE 2
+% %     THIS CODE BLOCK MAKES FIGURE 2
 % %
 % %
 
@@ -118,7 +118,7 @@ sc_sorted = sc(ii);
 yy1 = smooth(aa_sorted,sc_sorted,0.5,'loess');
 plot(aa_sorted,yy1,'r-','LineWidth',2);
 
-axis([-0.5 6.8 -14 14])
+axis([-0.5 6.8 0 24])
 xlabel('AGE');
 ylabel('PC1');
 
@@ -208,20 +208,14 @@ SCORE(4,:)*X + column_means
 
 % and this will be equal to C(4,:)
 
-%%
-figure;
 
-for j=1:11
-
-    a=-column_means(j);
-    b=COEFF(j,1)*(7.5-column_means(j));
-    plot([0 7.5],[a b], 'k-'); hold on;
-    
-    
-end
 
 
 %%
+
+%
+%  this shows the PC bi-plots for all of the principal components
+%
 
 figure;
 
@@ -236,35 +230,10 @@ for spi=1:10
     
 end
 
-%%
-figure;
-j=3;
-subplot(1,2,1)
-biplot( COEFF(:,(j-1):j), 'Scores', SCORE(1,(j-1):j), 'VarLabels', lbls );
-    xlabel(sprintf('%d',j-1));
-    ylabel(sprintf('%d',j));
-subplot(1,2,2)
-biplot( COEFF(:,j:(j+1)), 'Scores', SCORE(1,j:(j+1)), 'VarLabels', lbls );
-    xlabel(sprintf('%d',j));
-    ylabel(sprintf('%d',j+1));
 
 
 
-%%
 
-figure;
-plot( B(:,12), B(:,6), 'o' );
-
-BB06 = B(:,6);
-BB12 = B(:,12);
-
-A50 = B( B(:,12) > 50.0 & B(:,12) < 55.0 , : );
-A10 = B( B(:,12) > 10.0 & B(:,12) < 15.0 , : );
-
-A40 = B( B(:,12) > 40.0 & B(:,12) < 45.0 , : );
-A30 = B( B(:,12) > 30.0 & B(:,12) < 35.0 , : );
-A20 = B( B(:,12) > 20.0 & B(:,12) < 25.0 , : );
-mean( A40(:,6) )
 
 
 

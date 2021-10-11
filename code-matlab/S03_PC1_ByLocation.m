@@ -93,14 +93,15 @@ for loc=1:10
     yy1 = smooth(aa_sorted,sc_sorted,0.5,'loess');
     plot(aa_sorted,yy1,'r-','LineWidth',2);
 
+    axis([-2 log2(110) -1 25]);
     
 end
 
 %%
 
-[COEFFH1,SCOREH1,latentH1,tsquaredH1,explainedH1,muH1] = princomp(C(:,1:5), 'Centered', false);
+[COEFFH1,SCOREH1,latentH1,tsquaredH1,explainedH1,muH1] = pca(C(:,1:5), 'Centered', false);
 
-[COEFFH3,SCOREH3,latentH3,tsquaredH3,explainedH3,muH3] = princomp(C(:,6:11), 'Centered', false);
+[COEFFH3,SCOREH3,latentH3,tsquaredH3,explainedH3,muH3] = pca(C(:,6:11), 'Centered', false);
 
 
 %%

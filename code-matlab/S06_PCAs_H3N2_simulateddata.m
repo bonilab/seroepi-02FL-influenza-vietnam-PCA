@@ -1,25 +1,5 @@
 clear all;
-
-%strBase = 'AR15.Sigma0p85.nb0p9.rep07';
-% 
-% all_files = {   
-%                 'AR10.Sigma0p80.nb0p9.rep01',
-%                 'AR10.Sigma0p80.nb0p9.rep02',
-%                 'AR10.Sigma0p80.nb0p9.rep03',  
-%                 'AR10.Sigma0p80.nb0p9.rep04',  
-%                 'AR10.Sigma0p80.nb0p9.rep05',  
-%                 'AR10.Sigma0p85.nb0p9.rep01',
-%                 'AR10.Sigma0p85.nb0p9.rep02',
-%                 'AR10.Sigma0p85.nb0p9.rep03',  
-%                 'AR10.Sigma0p85.nb0p9.rep04',  
-%                 'AR10.Sigma0p90.nb0p9.rep05',  
-%                 'AR10.Sigma0p90.nb0p9.rep01',
-%                 'AR10.Sigma0p90.nb0p9.rep02',
-%                 'AR10.Sigma0p90.nb0p9.rep03',  
-%                 'AR10.Sigma0p90.nb0p9.rep04',  
-%                 'AR10.Sigma0p90.nb0p9.rep05'
-%             };
-%        
+   
 all_files = {};
 
 ars=[5 10 15 20 25 30];
