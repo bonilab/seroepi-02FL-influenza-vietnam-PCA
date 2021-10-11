@@ -306,7 +306,7 @@ title('All Antigens');
 
 % %
 % %
-% %  FIG 5
+% %  Previous Candidate for FIG 5
 % %
 % %  Export as 14" by 7",font size 11, eps
 % %
@@ -408,7 +408,7 @@ end
 % %
 % %
 % %
-% %         RUN THIS BLOCK FOR FIGURE 5 of the main text
+% %         RUN THIS BLOCK FOR FIGURE 4 of the main text
 % %         export as 15" by 5", fixed fonts at 11, eps
 % %
 % %

@@ -1,6 +1,6 @@
 ## README FILE FOR MATLAB CODE
 
-The MATLAB scripts are numbered from S01 to S11 and should be run in this order to understand the analysis pipeline.  We recommend opening the scripts in MATLAB (in order) and clicking run on each one first to see what figures and files are generated.
+The MATLAB scripts are numbered from S01 to S13 (with scripts 4 and 12 missing) and should be run in this order to understand the analysis pipeline.  We recommend opening the scripts in MATLAB (in order) and clicking run on each one first to see what figures and files are generated.
 
 ### SCRIPT 01 ("S01") 
 
