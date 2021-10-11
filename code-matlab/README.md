@@ -6,6 +6,8 @@ The MATLAB scripts are numbered from S01 to S11 and should be run in this order 
 
 This file reads in the titer data from 24,402 individuals into Matlab, performs the PCA, and saves the PCA matrices into the file 'mfb_workspace_titermatrix.mat'.
 
+Script 01b re-plots Figure 2 with prediction intervals.
+
 ### SCRIPT 02 ("S02") 
 
 This makes the density plot in Figure 3 of the main text.
@@ -13,6 +15,10 @@ This makes the density plot in Figure 3 of the main text.
 ### SCRIPT 03 ("S03") 
 
 This makes age by PC1 plots for all ten locations.  Note that some locations have much fewer data points than others.  The last part of this script does the subtype-specific PCAs, which are then saved as Matlab variable to be read in by later scripts.
+
+### SCRIPT 05 ("S05") 
+
+This script generates Figure 4 of the main text, a couple extra schematics to interpret Figure 4, and several supplementary figures.
 
 ### SCRIPT 06 ("S06") 
 
