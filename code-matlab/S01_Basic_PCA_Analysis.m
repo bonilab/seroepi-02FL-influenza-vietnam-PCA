@@ -1,10 +1,9 @@
 clear all;
 
-B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact.20201120.csv',1,0);
-%B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact_BirthYears.20201120.csv',1,0);
+B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact_BirthYears.20201120.csv',1,0);
 
 
-% 16 columns are
+% 16 columns in the above file are
 %
 % 1-5 :  TITER_H1_1918 , TITER_H1_1977 , TITER_H1_1999 , TITER_H1_2007 , TITER_H1_2009 , 
 % 6-11:  TITER_H3_1968 , TITER_H3_2003 , TITER_H3_2005 , TITER_H3_2007 , TITER_H3_2009 , TITER_H3_2011 , 
