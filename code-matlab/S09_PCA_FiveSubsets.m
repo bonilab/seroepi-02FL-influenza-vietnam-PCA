@@ -1,7 +1,6 @@
 clear all;
 
-B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact.20201120.csv',1,0);
-%B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact_BirthYears.20201120.csv',1,0);
+B = csvread('../data/TITERS_02FL_CompleteSetOf11HumanAg_Compact_BirthYears.20201120.csv',1,0);
 
 % 17 columns are
 %
