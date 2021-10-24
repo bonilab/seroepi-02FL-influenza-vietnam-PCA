@@ -6,6 +6,4 @@ Pre-print posted at https://www.medrxiv.org/content/10.1101/2021.01.03.21249160v
 
 DOI for first release of code repo (v1.1) is here:
 
-https://zenodo.org/badge/DOI/10.5281/zenodo.5594737.svg
-
-
+![image](https://user-images.githubusercontent.com/2318428/138579945-b2ab4492-fc3b-44a7-b423-a6886c83c8de.png)
